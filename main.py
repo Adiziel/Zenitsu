@@ -1,6 +1,5 @@
-from os import environ
+from os
 import discord
-from datetime import datetime 
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -56,5 +55,4 @@ async def spam_exit_text(member):
 
 if __name__ == "__main__":
   joined_member = []
-  # key = environ.get('DISCORD_TOKEN')
-  client.run('MTAzNjI0NzE3ODczOTQ2MjIwNA.GecVth.gPlTM21Vpomtk5_24adjeW3aXXOT-c1GIAUBd0')
+  key = os.environ('DISCORD_TOKEN')
