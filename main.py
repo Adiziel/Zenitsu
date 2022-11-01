@@ -57,4 +57,4 @@ async def spam_exit_text(member):
 if __name__ == "__main__":
   keep_alive()
   joined_member = []
-  key = os.environ('DISCORD_TOKEN')
+  client.run(os.getenv('DISCORD_TOKEN'))
