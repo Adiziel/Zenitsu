@@ -25,7 +25,7 @@ async def on_voice_state_update(member, before, after):
 
 async def spam_join_text():
   global joined_member
-  channel = client.get_channel(1033042011760119828)
+  channel = client.get_channel(1033049227342905455)
   members = channel.members
   members = [('{}#{}'.format(member.name, member.discriminator), member.name, member.bot, member.id) for member in channel.members if member.bot==False]
   if len(members) == len(joined_member):
@@ -42,7 +42,7 @@ async def spam_join_text():
 
 async def spam_exit_text(member):
   global joined_member
-  channel = client.get_channel(1033042011760119828)
+  channel = client.get_channel(1033049227342905455)
   members = channel.members
   members = [('{}#{}'.format(member.name, member.discriminator), member.name, member.bot, member.id) for member in channel.members if member.bot==False]
   if len(joined_member) == 0:
