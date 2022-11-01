@@ -1,1 +1,4 @@
 .venv
+.env
+story.txt
+dev.py
